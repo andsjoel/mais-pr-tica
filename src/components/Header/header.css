@@ -1,0 +1,79 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+    flex-direction: column;
+    color: white;
+    transition: 2s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+header .logo {
+    background-image: url(../../assets/images/logo_fechada.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 50px;
+}
+  
+.header.scrolled {
+    background-color: rgb(18, 18, 18);
+    height: 60px;
+    flex-direction: row;
+    justify-content: start;
+}
+
+header a.scrolled {
+    background-image: url(../../assets/images/logo_p.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.background-header {
+    z-index: -5;
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: 2s ease;
+    /* opacity: 0.5; */
+}
+
+.header.scrolled .background-header {
+    top: -100vw;
+}
+
+.bg_condominio {
+    opacity: 0.6;
+    z-index: -5;
+    width: 100vw;
+  }
+
+  /* ########## NAV ######## */
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header nav li {
+    list-style: none;
+  }
+
+  header nav li a {
+    color: white;
+    text-decoration: none;
+  }
