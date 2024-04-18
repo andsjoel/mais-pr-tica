@@ -1,0 +1,47 @@
+.home {
+    margin-top: 200px;
+    /* background-color: red; */
+    padding-top: 50px;
+    /* height: 100vh; */
+    color: #18272F;
+}
+
+.home.scrolled {
+    margin-top: 100px;
+}
+
+/* #home .bg_casa {
+    width: 100vw;
+    height: 200px;
+    
+} */
+
+.home .frase {
+    font-family: 'lineNexa';
+    text-align: center;
+    font-size: 18px;
+}
+
+.home .frase span {
+    font-weight: bold;
+    position: relative;
+}
+
+.home .frase span::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #18272F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.home .frase span:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}

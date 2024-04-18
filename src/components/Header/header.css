@@ -14,6 +14,8 @@ header {
     transition: 2s ease;
     z-index: 1000;
     overflow: hidden;
+    font-family: 'lineNexa';
+    /* font-weight: bold; */
 }
 
 header .logo {
@@ -75,5 +77,37 @@ header a.scrolled {
 
   header nav li a {
     color: white;
+    position: relative;
     text-decoration: none;
+    padding: 0 10px;
+    border-radius: 8px;
+  }
+
+  .header.scrolled nav ul {
+    flex-direction: row;
+  }
+
+  .header.scrolled nav li a {
+    padding: 5px;
+  }
+
+  header nav ul a:hover {
+    color: black;
+  }
+  
+  header nav ul a::before {
+    background: yellow;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    border-radius: 8px;
+  }
+  
+  header nav ul a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
   }

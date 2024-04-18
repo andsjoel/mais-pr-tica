@@ -24,11 +24,10 @@ const Header = () => {
                 <img className='bg_condominio' src={img_condo} />
             </div>
             <a className={`logo ${scrolled ? 'scrolled' : ''}`} href='#'>
-                {/* <img id="logo" src={logo} alt="Logo da Mais Prática" /> */}
             </a>
             <nav>
                 <ul>
-                   <li><a href='#'>Home</a></li>
+                   <li><a href='#'>Início</a></li>
                    <li><a href='#'>Sobre a +Prática</a></li>
                    <li><a href='#'>Contato</a></li>
                 </ul>
